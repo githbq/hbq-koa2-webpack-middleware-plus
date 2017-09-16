@@ -1,6 +1,6 @@
 {
     "name": "koa2-webpack-middleware-plus",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "koa2-webpack-middleware-plus",
     "main": "build/index.js",
     "scripts": {

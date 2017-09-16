@@ -1,4 +1,4 @@
-import webpackHotMiddleware from 'webpack-hot-middleware'
+import * as  webpackHotMiddleware from 'webpack-hot-middleware'
 import { PassThrough } from 'stream'
 
 export const hotMiddleware = (compiler, opts) => {
