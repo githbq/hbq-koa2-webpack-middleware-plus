@@ -8,7 +8,7 @@ if (!process.env.NODE_ENV) {
 var opn = require('opn')
 var path = require('path')
 var koa = require('koa')
-var { devMiddleware, hotMiddleware } = require('koa2-webpack-middleware')
+var { devMiddleware, hotMiddleware } = require('koa2-webpack-middleware-plus')
 var webpack = require('webpack')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = require('./webpack.dev.conf')
