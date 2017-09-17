@@ -1,5 +1,5 @@
-# koa-webpack-middleware
-改进[koa-webpack-middleware](https://www.npmjs.com/package/koa-webpack-hot-middleware)
+# koa2-webpack-middleware-plus
+powered by [koa-webpack-middleware](https://www.npmjs.com/package/koa-webpack-hot-middleware)
 
 ```javascript
 const { devMiddleware, hotMiddleware } = require('koa2-webpack-middleware-plus')
@@ -107,17 +107,10 @@ app.use(hotMiddleware(compile, {
     ]
     ```
 2. webpack `entry` configure
-
-    ```sh
-    $ npm i eventsource-polyfill -D
-    ```
-
     ```js
     entry: {
       'index': [
-        // For old browsers
-        'eventsource-polyfill',
-        'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+        'koa2-webpack-middleware-plus/build/dev-client',
         'index.js']
     },
     ```
